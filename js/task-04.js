@@ -11,3 +11,4 @@ decrementButton.addEventListener("click", () => {
     let result = Number(counterValue.innerHTML) - 1;
     counterValue.innerHTML = result;
 });
+
