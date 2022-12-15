@@ -18,7 +18,7 @@ function onFormSubmit(evt) {
         alert(message);
     } else {
         return formData.forEach((value, name) => {
-            console.log({name, value} )
+            console.log({name, value})
         });
     };
 
