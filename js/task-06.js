@@ -1,7 +1,5 @@
 const textInput = document.querySelector('#validation-input');
 
-// console.log(textInput);
-
 textInput.addEventListener("blur", inputValidationCheking);
 
 function inputValidationCheking() {
