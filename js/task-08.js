@@ -12,22 +12,17 @@ function onFormSubmit(evt) {
     const message = 'Всі поля повинні бути заповнені!';
     // const formData = { email, password };
 
-    const formData = new FormData(evt.currentTarget).forEach((value, name) => {
-        console.log(name, value);
-    });
+    const formData = new FormData(evt.currentTarget);
 
     if (email.value === '' || password.value === '') {
         alert(message);
     } else {
-        return formData;
+        return formData.forEach((value, name) => {
+            console.log({name, value} )
+        });
     };
 
     form.reset();
-
-        // formData.forEach((value, name) => {
-    //     console.log(name, value);
-    // });
-
-    // console.log(formData);
    
-}
+};
+
