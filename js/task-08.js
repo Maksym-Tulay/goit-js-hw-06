@@ -14,12 +14,7 @@ function onFormSubmit(evt) {
 
     const formData = new FormData(evt.currentTarget).forEach((value, name) => {
         console.log(name, value);
-    });;
-
-    // formData.forEach((value, name) => {
-    //     console.log(name, value);
-    // });
-    console.log(formData);
+    });
 
     if (email.value === '' || password.value === '') {
         alert(message);
@@ -29,8 +24,10 @@ function onFormSubmit(evt) {
 
     form.reset();
 
+        // formData.forEach((value, name) => {
+    //     console.log(name, value);
+    // });
+
     // console.log(formData);
-
-
-    
+   
 }
