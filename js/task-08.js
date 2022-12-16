@@ -16,9 +16,8 @@ function onFormSubmit(evt) {
     if (email === '' || password === '') {
         alert(message);
     } else {
-        return formDataObject && console.log(formDataObject);
+        return formDataObject && console.log(formDataObject)
     };
 
     form.reset();
 };
-

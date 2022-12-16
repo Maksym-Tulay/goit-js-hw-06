@@ -15,4 +15,3 @@ function changeBodyBackgroundColor(event) {
   bodyTextColor.textContent = getRandomHexColor();
 }
 
-// span.textContent = getRandomHexColor()
